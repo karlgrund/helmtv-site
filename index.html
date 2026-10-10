@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HelmTV - a player for your own IPTV on Android TV</title>
+<meta name="description" content="HelmTV is an Android TV app for playing your own Xtream-compatible IPTV subscription. It provides no content. No account, no ads, no tracking.">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#0b0c0e">
+<link rel="canonical" href="https://helmtv.app/">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Crect%20width='100'%20height='100'%20rx='22'%20fill='%23111316'/%3E%3Cg%20transform='translate(10%2010)%20scale(.8)'%3E%3Cpath%20fill='%23F2F0EB'%20d='M28,18%20a8,8%200%200%201%208,8%20v48%20a8,8%200%200%201%20-8,8%20a8,8%200%200%201%20-8,-8%20v-48%20a8,8%200%200%201%208,-8%20z%20M72,18%20a8,8%200%200%201%208,8%20v48%20a8,8%200%200%201%20-8,8%20a8,8%200%200%201%20-8,-8%20v-48%20a8,8%200%200%201%208,-8%20z'/%3E%3Cpath%20fill='%23E3A944'%20stroke='%23E3A944'%20stroke-width='4'%20stroke-linejoin='round'%20d='M34,32%20L56,50%20L34,68%20Z'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="./"><svg viewBox="0 0 100 100" aria-hidden="true" focusable="false"><rect width="100" height="100" rx="22" fill="#111316"/><g transform="translate(10 10) scale(.8)"><path fill="#F2F0EB" d="M28,18 a8,8 0 0 1 8,8 v48 a8,8 0 0 1 -8,8 a8,8 0 0 1 -8,-8 v-48 a8,8 0 0 1 8,-8 z M72,18 a8,8 0 0 1 8,8 v48 a8,8 0 0 1 -8,8 a8,8 0 0 1 -8,-8 v-48 a8,8 0 0 1 8,-8 z"/><path fill="#E3A944" stroke="#E3A944" stroke-width="4" stroke-linejoin="round" d="M34,32 L56,50 L34,68 Z"/></g></svg><span>HelmTV</span></a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#support">Support</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <div class="wrap">
+    <h1>HelmTV &mdash; a player for your own IPTV on Android TV</h1>
+    <p class="lead">A fast, remote-friendly app for watching live TV, films and series from the Xtream-compatible provider you already subscribe to.</p>
+
+    <p class="notice">HelmTV does not provide, host, sell or link to any TV channels, films or series. You bring your own subscription from a provider you are legally allowed to use.</p>
+
+    <!-- TODO: replace "#" with the Play Store listing once published:
+         https://play.google.com/store/apps/details?id=com.helmtv.app -->
+    <p><a class="button" href="#">Get it on Google Play</a></p>
+
+    <h2 id="features">Features</h2>
+    <ul class="features">
+      <li><strong>Live TV</strong><span>Channels grouped by country and category, with quick zapping.</span></li>
+      <li><strong>EPG guide</strong><span>A programme guide so you can see what is on now and next.</span></li>
+      <li><strong>Movies and series</strong><span>Browse your provider's film and series library.</span></li>
+      <li><strong>Search</strong><span>Find channels, films and series across your catalogue.</span></li>
+      <li><strong>Favourites</strong><span>Keep the channels and titles you watch most close at hand.</span></li>
+      <li><strong>Continue watching</strong><span>Pick up films and episodes where you left off.</span></li>
+      <li><strong>Subtitles and audio</strong><span>Choose subtitle and audio tracks while playing.</span></li>
+      <li><strong>English and Swedish</strong><span>The interface is available in both languages.</span></li>
+    </ul>
+
+    <h2>How it works</h2>
+    <p>On first run you enter the details your provider gave you: a name, the server address, your username and your password. HelmTV then fetches your channel list and programme guide from that provider and plays the streams it offers. Nothing else is configured and no HelmTV account is needed.</p>
+    <p>HelmTV has no analytics, no advertising and no tracking. Read the <a href="privacy.html">privacy policy</a> for the details.</p>
+
+    <h2 id="about">About</h2>
+    <p>Version 0.1.0. HelmTV is a personal project, designed for Android TV with a remote control.</p>
+    <p>It is built with open-source software, including:</p>
+    <ul>
+      <li>Media3 / ExoPlayer for playback</li>
+      <li>Jetpack Compose, including Compose for TV, for the interface</li>
+      <li>Room for the local catalogue database</li>
+      <li>Paging for long lists</li>
+      <li>Coil for loading images</li>
+      <li>OkHttp for network requests</li>
+      <li>Jetpack DataStore for settings</li>
+      <li>The Figtree typeface (SIL Open Font License)</li>
+    </ul>
+    <p class="meta">Google Play and Android TV are trademarks of Google LLC. HelmTV is not affiliated with or endorsed by Google.</p>
+
+    <h2 id="support">Support</h2>
+    <p>Questions, bug reports or privacy requests: <a href="mailto:support@helmtv.app">support@helmtv.app</a>.</p>
+    <p>Please note that HelmTV cannot help with your subscription, your channel list or your provider's service. For those, contact your provider.</p>
+  </div>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <p><a href="privacy.html">Privacy policy</a> &middot; <a href="mailto:support@helmtv.app">support@helmtv.app</a></p>
+    <p>HelmTV 0.1.0. No cookies, no analytics, no external requests from this website.</p>
+  </div>
+</footer>
+</body>
+</html>
