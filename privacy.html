@@ -66,7 +66,7 @@
     <p>Many providers only offer plain HTTP, and some of their streams are served over HTTP from other hosts. To make those providers work, the app allows unencrypted HTTP connections. If you enter a server address without <code>http://</code> or <code>https://</code>, the app assumes <code>http://</code>. Over plain HTTP, other parties on the network path, such as your network operator, can potentially see your provider credentials and what you watch. Using HTTPS, where your provider supports it, and choosing a provider and network you trust is your responsibility.</p>
 
     <h2>5. Backups</h2>
-    <p>The app allows Android's standard system backup. Depending on your device and Google account settings, Android may include app data in a backup under Google's own terms and privacy policy. The key that protects your provider credentials stays in the Android Keystore and is not part of such a backup, so after a restore you may need to enter your provider details again.</p>
+    <p>The app allows Android's standard system backup. Depending on your device and Google account settings, Android may include app data in a backup under Google's own terms and privacy policy. Provider credentials are encrypted with a key kept in the Android Keystore. Depending on your device, a restored backup may therefore not include working credentials, and you may need to enter your provider details again.</p>
 
     <h2>6. Deleting your data</h2>
     <p>Uninstalling the app removes all data it stored on your device. You can also clear the app's storage in Android's settings. Because the developer holds no data about you, there is nothing to delete on the developer's side.</p>
