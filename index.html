@@ -3,61 +3,180 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HelmTV - a player for your own IPTV on Android TV</title>
-<meta name="description" content="HelmTV is an Android TV app for playing your own Xtream-compatible IPTV subscription. It provides no content. No account, no ads, no tracking.">
+<title>HelmTV - your TV, your provider</title>
+<meta name="description" content="HelmTV is a fast, remote-friendly Android TV player for the Xtream-compatible IPTV provider you already have. It provides no content. No account, no ads, no tracking.">
+<meta property="og:title" content="HelmTV - your TV, your provider">
+<meta property="og:description" content="A fast, remote-friendly Android TV player for the IPTV provider you already have. No account, no ads, no tracking.">
+<meta property="og:image" content="https://helmtv.app/images/hero.webp">
+<meta property="og:type" content="website">
+<link rel="preload" href="fonts/Figtree.ttf" as="font" type="font/ttf" crossorigin>
 <meta name="color-scheme" content="dark light">
 <meta name="theme-color" content="#0b0c0e">
 <link rel="canonical" href="https://helmtv.app/">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Crect%20width='100'%20height='100'%20rx='22'%20fill='%23111316'/%3E%3Cg%20transform='translate(10%2010)%20scale(.8)'%3E%3Cpath%20fill='%23F2F0EB'%20d='M28,18%20a8,8%200%200%201%208,8%20v48%20a8,8%200%200%201%20-8,8%20a8,8%200%200%201%20-8,-8%20v-48%20a8,8%200%200%201%208,-8%20z%20M72,18%20a8,8%200%200%201%208,8%20v48%20a8,8%200%200%201%20-8,8%20a8,8%200%200%201%20-8,-8%20v-48%20a8,8%200%200%201%208,-8%20z'/%3E%3Cpath%20fill='%23E3A944'%20stroke='%23E3A944'%20stroke-width='4'%20stroke-linejoin='round'%20d='M34,32%20L56,50%20L34,68%20Z'/%3E%3C/g%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="home">
 <a class="skip" href="#main">Skip to content</a>
 <header class="site">
-  <div class="wrap">
+  <div class="wrap wide">
     <a class="brand" href="./"><svg viewBox="0 0 100 100" aria-hidden="true" focusable="false"><rect width="100" height="100" rx="22" fill="#111316"/><g transform="translate(10 10) scale(.8)"><path fill="#F2F0EB" d="M28,18 a8,8 0 0 1 8,8 v48 a8,8 0 0 1 -8,8 a8,8 0 0 1 -8,-8 v-48 a8,8 0 0 1 8,-8 z M72,18 a8,8 0 0 1 8,8 v48 a8,8 0 0 1 -8,8 a8,8 0 0 1 -8,-8 v-48 a8,8 0 0 1 8,-8 z"/><path fill="#E3A944" stroke="#E3A944" stroke-width="4" stroke-linejoin="round" d="M34,32 L56,50 L34,68 Z"/></g></svg><span>HelmTV</span></a>
     <nav aria-label="Main">
       <ul>
         <li><a href="#features">Features</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#support">Support</a></li>
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#faq">FAQ</a></li>
         <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="#support">Support</a></li>
       </ul>
     </nav>
   </div>
 </header>
 <main id="main">
-  <div class="wrap">
-    <h1>HelmTV &mdash; a player for your own IPTV on Android TV</h1>
-    <p class="lead">A fast, remote-friendly app for watching live TV, movies and series from the Xtream-compatible provider you already subscribe to.</p>
+  <section class="hero">
+    <div class="wrap wide">
+      <div>
+        <h1>Your TV. Your provider.</h1>
+        <p class="lead">A fast, remote-friendly player for the IPTV provider you already have.</p>
+        <div class="actions">
+          <!-- TODO: when the app is published, make this a link to
+               https://play.google.com/store/apps/details?id=com.helmtv.app
+               (use the official Google Play badge). -->
+          <span class="button" role="note">Coming soon to Google Play</span>
+          <a class="button ghost" href="#how">See how it works</a>
+        </div>
+        <p class="note" style="margin-top:1rem">For Android TV and Chromecast with Google TV. Built for the remote.</p>
+      </div>
+      <figure class="tv">
+        <div class="bezel"><img src="images/hero.webp" width="1600" height="900" alt="Illustration of a desert canyon at golden hour on a television"></div>
+        <div class="stand" aria-hidden="true"></div>
+        <figcaption>Artwork from an invented demo catalog. Real screenshots will follow.</figcaption>
+      </figure>
+    </div>
+  </section>
 
-    <p class="notice">HelmTV does not provide, host, sell or link to any TV channels, movies or series. You bring your own subscription from a provider you are legally allowed to use.</p>
+  <section class="block">
+    <div class="wrap wide">
+      <p class="statement">HelmTV provides no channels, movies or series. You add the provider you already have the right to use.</p>
+    </div>
+  </section>
 
-    <!-- TODO: replace "#" with the Play Store listing once published:
-         https://play.google.com/store/apps/details?id=com.helmtv.app -->
-    <p><a class="button" href="#">Get it on Google Play</a></p>
+  <section class="block" id="how">
+    <div class="wrap wide">
+      <h2>How it works</h2>
+      <ol class="steps">
+        <li><strong>Install HelmTV</strong><span>On your Android TV or Chromecast with Google TV.</span></li>
+        <li><strong>Enter your provider's details</strong><span>The name, server address, username and password your provider gave you.</span></li>
+        <li><strong>Pick categories and watch</strong><span>Choose what to show, then start watching. Nothing else to set up.</span></li>
+      </ol>
+    </div>
+  </section>
 
-    <h2 id="features">Features</h2>
-    <ul class="features">
-      <li><strong>Live TV</strong><span>Channels grouped by country and category, with quick zapping.</span></li>
-      <li><strong>EPG guide</strong><span>A program guide so you can see what is on now and next.</span></li>
-      <li><strong>Movies and series</strong><span>Browse your provider's film and series library.</span></li>
-      <li><strong>Search</strong><span>Find channels, movies and series across your catalog, with your recent searches kept on your device.</span></li>
-      <li><strong>Favorites</strong><span>Keep the channels and titles you watch most close at hand.</span></li>
-      <li><strong>Continue watching</strong><span>Pick up movies and episodes where you left off.</span></li>
-      <li><strong>Subtitles and audio</strong><span>Choose subtitle and audio tracks while playing.</span></li>
-      <li><strong>Public streams</strong><span>No provider yet? Try the app with a few free public streams first.</span></li>
-      <li><strong>English and Swedish</strong><span>The interface is available in both languages.</span></li>
-    </ul>
+  <section class="block" id="features">
+    <div class="wrap wide">
+      <h2>Features</h2>
+      <ul class="cards">
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M8 2l4 4 4-4"/></svg><strong>Live TV</strong><span>Browse by category and zap quickly with the remote.</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M9 10v10"/></svg><strong>Program guide</strong><span>See what is on now and next, per channel.</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 4v16M17 4v16M3 9h4M3 15h4M17 9h4M17 15h4"/></svg><strong>Movies and series</strong><span>Your provider's library, with seasons and episodes.</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6"/><path d="M16 16l5 5"/></svg><strong>Search</strong><span>Across live, movies and series. Recent searches stay on the device.</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l2.7 5.6 6.1.8-4.5 4.3 1.1 6.1L12 17l-5.4 2.8 1.1-6.1L3.2 9.4l6.1-.8z"/></svg><strong>Favorites and continue watching</strong><span>Pick up where you left off.</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 11h4M13 11h4M7 15h2M11 15h6"/></svg><strong>Subtitles and audio</strong><span>Choose tracks while you watch.</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 12a8 8 0 1 1-2.3-5.7"/><path d="M20 4v5h-5"/></svg><strong>Recovers from frozen streams</strong><span>Reconnects on its own and stops playing when you leave.</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13 2L5 14h6l-1 8 8-12h-6z"/></svg><strong>Low-latency mode</strong><span>Optional, for sport.</span></li>
+      </ul>
+    </div>
+  </section>
 
-    <h2>How it works</h2>
-    <p>On first run you enter the details your provider gave you: a name, the server address, your username and your password. HelmTV then fetches your channel list and program guide from that provider and plays the streams it offers. Nothing else is configured and no HelmTV account is needed.</p>
-    <p>HelmTV has no analytics, no advertising and no tracking. Read the <a href="privacy.html">privacy policy</a> for the details.</p>
+  <section class="block">
+    <div class="wrap wide">
+      <h2>A calm, poster-first catalog</h2>
+      <p class="section-lead">Browse movies and series as posters, live channels with their logos, and scenes in the program guide. Everything below is invented artwork from a demo catalog, made to show the look.</p>
+      <ul class="strip posters">
+      <li><img src="images/poster_the-last-lighthouse.webp" width="360" height="540" loading="lazy" alt="Poster of the invented title The Last Lighthouse"></li>
+      <li><img src="images/poster_orbit-of-marigold.webp" width="360" height="540" loading="lazy" alt="Poster of the invented title Orbit of Marigold"></li>
+      <li><img src="images/poster_tidewater.webp" width="360" height="540" loading="lazy" alt="Poster of the invented title Tidewater"></li>
+      <li><img src="images/poster_northbound.webp" width="360" height="540" loading="lazy" alt="Poster of the invented title Northbound"></li>
+      <li><img src="images/poster_paper-lanterns.webp" width="360" height="540" loading="lazy" alt="Poster of the invented title Paper Lanterns"></li>
+      <li><img src="images/poster_wild-hearts-of-the-atlas.webp" width="360" height="540" loading="lazy" alt="Poster of the invented title Wild Hearts of the Atlas"></li>
+      <li><img src="images/poster_glass-harbor.webp" width="360" height="540" loading="lazy" alt="Poster of the invented title Glass Harbor"></li>
+      <li><img src="images/poster_outpost-seven.webp" width="360" height="540" loading="lazy" alt="Poster of the invented title Outpost Seven"></li>
+      </ul>
+      <ul class="strip logos">
+      <li><img src="images/logo_nordlys-news.webp" width="192" height="192" loading="lazy" alt="Logo of the invented channel Nordlys News"></li>
+      <li><img src="images/logo_arena-one.webp" width="192" height="192" loading="lazy" alt="Logo of the invented channel Arena One"></li>
+      <li><img src="images/logo_wildline.webp" width="192" height="192" loading="lazy" alt="Logo of the invented channel Wildline"></li>
+      <li><img src="images/logo_cinema-nova.webp" width="192" height="192" loading="lazy" alt="Logo of the invented channel Cinema Nova"></li>
+      <li><img src="images/logo_pip-kids.webp" width="192" height="192" loading="lazy" alt="Logo of the invented channel Pip Kids"></li>
+      <li><img src="images/logo_pulse-music.webp" width="192" height="192" loading="lazy" alt="Logo of the invented channel Pulse Music"></li>
+      <li><img src="images/logo_deepblue.webp" width="192" height="192" loading="lazy" alt="Logo of the invented channel Deepblue"></li>
+      <li><img src="images/logo_summit-sports.webp" width="192" height="192" loading="lazy" alt="Logo of the invented channel Summit Sports"></li>
+      </ul>
+      <ul class="frames">
+      <li><img src="images/frame_nordlys-news.webp" width="800" height="450" loading="lazy" alt="Illustration: A night newsroom skyline"></li>
+      <li><img src="images/frame_arena-two.webp" width="800" height="450" loading="lazy" alt="Illustration: An indoor arena"></li>
+      <li><img src="images/frame_deepblue.webp" width="800" height="450" loading="lazy" alt="Illustration: A kelp forest"></li>
+      <li><img src="images/frame_cinema-nova.webp" width="800" height="450" loading="lazy" alt="Illustration: A cinema marquee at night"></li>
+      </ul>
+      <p class="note">All channels, titles and artwork on this page are fictional.</p>
+    </div>
+  </section>
 
-    <h2 id="about">About</h2>
-    <p>Version 0.1.0. HelmTV is a personal project, designed for Android TV with a remote control.</p>
-    <p>It is built with open-source software, including:</p>
-    <ul>
+  <section class="block">
+    <div class="wrap wide remote">
+      <div>
+        <h2 style="margin-top:0">Made for the remote</h2>
+        <p>Every screen works with the arrow keys, OK and Back. Move with the arrows, press OK to open or play, press Back to go up one step. Press and hold OK on an item for more choices.</p>
+        <p class="meta">No touch, no mouse, no keyboard needed.</p>
+      </div>
+      <svg class="dpad" viewBox="0 0 240 240" role="img" aria-label="A remote control direction pad with arrows, an OK button and a Back key">
+        <circle class="ring" cx="120" cy="120" r="108"/>
+        <path class="arrow" d="M120 26l14 20h-28z"/><path class="arrow" d="M120 214l14-20h-28z"/>
+        <path class="arrow" d="M26 120l20-14v28z"/><path class="arrow" d="M214 120l-20-14v28z"/>
+        <circle class="ok" cx="120" cy="120" r="40"/><text class="okt" x="120" y="126" text-anchor="middle">OK</text>
+      </svg>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap wide">
+      <h2>Languages</h2>
+      <p class="section-lead">The interface follows your device language, and you can change it in Settings.</p>
+      <ul class="chips"><li>English</li><li>Svenska</li></ul>
+    </div>
+  </section>
+
+  <section class="block" id="privacy">
+    <div class="wrap wide">
+      <h2>Privacy at a glance</h2>
+      <ul class="points">
+        <li>No account<span>HelmTV has no sign-up and no login of its own.</span></li>
+        <li>No ads<span>Nothing is sold or shown to you.</span></li>
+        <li>No analytics or tracking<span>Nothing about you is sent to the developer.</span></li>
+        <li>Stored on your device<span>Provider details (encrypted), favorites, watch history and recent searches.</span></li>
+      </ul>
+      <p>If you choose the optional public streams, they are fetched from a server run by the developer, which sees your IP address like any website. Read the full <a href="privacy.html">privacy policy</a>.</p>
+    </div>
+  </section>
+
+  <section class="block" id="faq">
+    <div class="wrap wide">
+      <h2>Questions</h2>
+    <details><summary>Does HelmTV include channels, movies or series?</summary><p>No. HelmTV is only a player. It provides, hosts, sells and links to no content. You add the provider you already have the right to use.</p></details>
+    <details><summary>Which providers work?</summary><p>Providers that offer an Xtream-compatible login: a server address, a username and a password. If your provider gave you those three things, HelmTV can use them.</p></details>
+    <details><summary>Do I need an account with you?</summary><p>No. There is no HelmTV account. Your provider details are stored encrypted on your device.</p></details>
+    <details><summary>Does it work on Chromecast with Google TV and Fire TV?</summary><p>HelmTV is built for Android TV, including Chromecast with Google TV. Fire TV is not officially supported.</p></details>
+    <details><summary>Can I use it on my phone?</summary><p>No. HelmTV is made for Android TV and the TV remote.</p></details>
+    <details><summary>I have no provider yet. Can I still try it?</summary><p>Yes. On first start choose "Use public streams" to try the app with a few free public streams. They are fetched from a server run by the developer, which sees your IP address like any website.</p></details>
+    <details><summary>How do I get support?</summary><p>Write to <a href="mailto:support@helmtv.app">support@helmtv.app</a>. HelmTV cannot help with your subscription or your provider's service. For those, contact your provider.</p></details>
+    </div>
+  </section>
+
+  <section class="block" id="about">
+    <div class="wrap wide">
+      <h2>About</h2>
+      <p>Version 0.1.0. HelmTV is a personal project, designed for Android TV with a remote control. It is built with open-source software, including:</p>
+      <ul class="credits">
       <li>Media3 / ExoPlayer for playback</li>
       <li>Jetpack Compose, including Compose for TV, for the interface</li>
       <li>Room for the local catalog database</li>
@@ -67,21 +186,30 @@
       <li>Jetpack DataStore for settings</li>
       <li>The Figtree typeface (SIL Open Font License)</li>
     </ul>
-    <p class="meta">Google Play and Android TV are trademarks of Google LLC. HelmTV is not affiliated with or endorsed by Google.</p>
+    </div>
+  </section>
 
-    <h2 id="content">Content and copyright</h2>
-    <p>HelmTV is a media player. It does not include, host, stream, sell or link to any TV channels, movies, series or other content, and it has no built-in playlists. Everything you watch comes from a provider that you choose and that you are legally allowed to use.</p>
-    <p>Because HelmTV does not host any content, it cannot remove it. If you believe content is being distributed without permission, please contact the provider or host that serves it. Questions about the app itself go to <a href="mailto:support@helmtv.app">support@helmtv.app</a>.</p>
+  <section class="block" id="content">
+    <div class="wrap wide">
+      <h2>Content and copyright</h2>
+      <p>HelmTV is a media player. It does not include, host, stream, sell or link to any TV channels, movies, series or other content, and it has no built-in playlists. Everything you watch comes from a provider that you choose and that you are legally allowed to use.</p>
+      <p>Because HelmTV does not host any content, it cannot remove it. If you believe content is being distributed without permission, please contact the provider or host that serves it. Questions about the app itself go to <a href="mailto:support@helmtv.app">support@helmtv.app</a>.</p>
+    </div>
+  </section>
 
-    <h2 id="support">Support</h2>
-    <p>Questions, bug reports or privacy requests: <a href="mailto:support@helmtv.app">support@helmtv.app</a>.</p>
-    <p>Please note that HelmTV cannot help with your subscription, your channel list or your provider's service. For those, contact your provider.</p>
-  </div>
+  <section class="block" id="support">
+    <div class="wrap wide">
+      <h2>Support</h2>
+      <p>Questions, bug reports or privacy requests: <a href="mailto:support@helmtv.app">support@helmtv.app</a>.</p>
+      <p>Please note that HelmTV cannot help with your subscription, your channel list or your provider's service. For those, contact your provider.</p>
+    </div>
+  </section>
 </main>
 <footer class="site">
-  <div class="wrap">
+  <div class="wrap wide">
     <p><a href="privacy.html">Privacy policy</a> &middot; <a href="mailto:support@helmtv.app">support@helmtv.app</a></p>
     <p>HelmTV 0.1.0. No cookies, no analytics, no external requests from this website.</p>
+    <p>Google Play and Android TV are trademarks of Google LLC. HelmTV is not affiliated with or endorsed by Google.</p>
   </div>
 </footer>
 </body>
