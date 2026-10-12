@@ -1,6 +1,6 @@
 # HelmTV website
 
-Static site for https://helmtv.app: home page, privacy policy (`/privacy.html`), 404 page.
+Static site for https://helmtv.app: home page, privacy policy (`/privacy`, served from `privacy.html`), 404 page.
 Plain HTML and CSS, no build step, no JavaScript, no third-party requests.
 
 Images are WebP in `images/` (artwork from the invented demo catalog in the app repo's `marketing/`); the Figtree font (SIL OFL) is self-hosted in `fonts/`, so the site makes no third-party requests.
@@ -37,6 +37,6 @@ add AAAA records from GitHub's documentation for IPv6. Changes can take a while 
 
 ## Google Play
 
-Use `https://helmtv.app` as the website and `https://helmtv.app/privacy.html` as the privacy
-policy URL. If the app's behaviour changes (new SDKs, new network calls), update `privacy.html`
+Use `https://helmtv.app` as the website and `https://helmtv.app/privacy` as the privacy
+policy URL (canonical; `/privacy.html` also works). If the app's behaviour changes (new SDKs, new network calls), update `privacy.html`
 and its "Last updated" date.
