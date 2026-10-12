@@ -4,16 +4,30 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>HelmTV - your TV, your provider</title>
-<meta name="description" content="HelmTV is a fast, remote-friendly Android TV player for the Xtream-compatible IPTV provider you already have. It includes no channels or content of its own. No account, no ads, no tracking.">
+<meta name="description" content="HelmTV is a fast, remote-friendly Android TV player for the IPTV provider you already have. It includes no channels or content of its own. No account, no ads, no tracking.">
 <meta property="og:title" content="HelmTV - your TV, your provider">
 <meta property="og:description" content="A fast, remote-friendly Android TV player for the IPTV provider you already have. No account, no ads, no tracking.">
-<meta property="og:image" content="https://helmtv.app/images/hero.webp">
 <meta property="og:type" content="website">
-<link rel="preload" href="fonts/Figtree.ttf" as="font" type="font/ttf" crossorigin>
+<meta property="og:url" content="https://helmtv.app/">
+<meta property="og:site_name" content="HelmTV">
+<meta property="og:image" content="https://helmtv.app/images/og.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="HelmTV: Your TV. Your provider. An illustration of a desert canyon on a television.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="HelmTV - your TV, your provider">
+<meta name="twitter:description" content="A fast, remote-friendly Android TV player for the IPTV provider you already have. No account, no ads, no tracking.">
+<meta name="twitter:image" content="https://helmtv.app/images/og.png">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; font-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<link rel="preload" href="fonts/Figtree.woff2" as="font" type="font/woff2" crossorigin>
 <meta name="color-scheme" content="dark light">
 <meta name="theme-color" content="#0b0c0e">
 <link rel="canonical" href="https://helmtv.app/">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Crect%20width='100'%20height='100'%20rx='22'%20fill='%23111316'/%3E%3Cg%20transform='translate(10%2010)%20scale(.8)'%3E%3Cpath%20fill='%23F2F0EB'%20d='M28,18%20a8,8%200%200%201%208,8%20v48%20a8,8%200%200%201%20-8,8%20a8,8%200%200%201%20-8,-8%20v-48%20a8,8%200%200%201%208,-8%20z%20M72,18%20a8,8%200%200%201%208,8%20v48%20a8,8%200%200%201%20-8,8%20a8,8%200%200%201%20-8,-8%20v-48%20a8,8%200%200%201%208,-8%20z'/%3E%3Cpath%20fill='%23E3A944'%20stroke='%23E3A944'%20stroke-width='4'%20stroke-linejoin='round'%20d='M34,32%20L56,50%20L34,68%20Z'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="stylesheet" href="style.css">
 </head>
 <body class="home">
@@ -42,24 +56,24 @@
           <!-- TODO: when the app is published, make this a link to
                https://play.google.com/store/apps/details?id=com.helmtv.app
                (use the official Google Play badge). -->
-          <span class="button" role="note">Coming soon to Google Play</span>
+          <span class="badge">Coming soon to Google Play</span>
           <a class="button ghost" href="#how">See how it works</a>
         </div>
-        <p class="note" style="margin-top:1rem">For Android TV and Chromecast with Google TV. Built for the remote.</p>
+        <p class="note first">For Android TV and Chromecast with Google TV. Built for the remote.</p>
       </div>
       <figure class="tv">
         <div class="bezel"><img src="images/hero.webp" width="1600" height="900" alt="Illustration of a desert canyon at golden hour on a television"></div>
         <div class="stand" aria-hidden="true"></div>
-        <figcaption>Artwork from an invented demo catalog. Real screenshots will follow.</figcaption>
+        <figcaption>Invented artwork. Real screenshots will follow.</figcaption>
       </figure>
     </div>
   </section>
 
-  <section class="block">
+  <div class="block">
     <div class="wrap wide">
-      <p class="statement">HelmTV includes no channels, movies or series of its own for your provider. You add the provider you already have the right to use. To try the app first, an optional &ldquo;Use public streams&rdquo; mode shows a small sample of publicly available streams.</p>
+      <p class="statement">HelmTV includes no channels, movies or series of its own. You need your own provider, and you add one you already have the right to use.</p>
     </div>
-  </section>
+  </div>
 
   <section class="block" id="how">
     <div class="wrap wide">
@@ -83,7 +97,7 @@
       <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l2.7 5.6 6.1.8-4.5 4.3 1.1 6.1L12 17l-5.4 2.8 1.1-6.1L3.2 9.4l6.1-.8z"/></svg><strong>Favorites and continue watching</strong><span>Pick up where you left off.</span></li>
       <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 11h4M13 11h4M7 15h2M11 15h6"/></svg><strong>Subtitles and audio</strong><span>Choose tracks while you watch.</span></li>
       <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 12a8 8 0 1 1-2.3-5.7"/><path d="M20 4v5h-5"/></svg><strong>Recovers from frozen streams</strong><span>Reconnects on its own and stops playing when you leave.</span></li>
-      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13 2L5 14h6l-1 8 8-12h-6z"/></svg><strong>Low-latency mode</strong><span>Optional, for sport.</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13 2L5 14h6l-1 8 8-12h-6z"/></svg><strong>Low-latency mode</strong><span>Optional, for live broadcasts.</span></li>
       </ul>
     </div>
   </section>
@@ -91,7 +105,7 @@
   <section class="block">
     <div class="wrap wide">
       <h2>A calm, poster-first catalog</h2>
-      <p class="section-lead">Browse movies and series as posters, live channels with their logos, and scenes in the program guide. Everything below is invented artwork from a demo catalog, made to show the look.</p>
+      <p class="section-lead">Browse movies and series as posters, live channels with their logos, and scenes in the program guide. Everything below is invented artwork, made to show the look.</p>
       <ul class="strip posters">
       <li><img src="images/poster_the-last-lighthouse.webp" width="360" height="540" loading="lazy" alt="Poster of the invented title The Last Lighthouse"></li>
       <li><img src="images/poster_orbit-of-marigold.webp" width="360" height="540" loading="lazy" alt="Poster of the invented title Orbit of Marigold"></li>
@@ -125,11 +139,11 @@
   <section class="block">
     <div class="wrap wide remote">
       <div>
-        <h2 style="margin-top:0">Made for the remote</h2>
+        <h2>Made for the remote</h2>
         <p>Every screen works with the arrow keys, OK and Back. Move with the arrows, press OK to open or play, press Back to go up one step. Press and hold OK on an item for more choices.</p>
         <p class="meta">No touch, no mouse, no keyboard needed.</p>
       </div>
-      <svg class="dpad" viewBox="0 0 240 240" role="img" aria-label="A remote control direction pad with arrows, an OK button and a Back key">
+      <svg class="dpad" viewBox="0 0 240 240" role="img" aria-label="A remote control direction pad with four arrows and an OK button">
         <circle class="ring" cx="120" cy="120" r="108"/>
         <path class="arrow" d="M120 26l14 20h-28z"/><path class="arrow" d="M120 214l14-20h-28z"/>
         <path class="arrow" d="M26 120l20-14v28z"/><path class="arrow" d="M214 120l-20-14v28z"/>
@@ -155,19 +169,19 @@
         <li>No analytics or tracking<span>Nothing about you is sent to the developer.</span></li>
         <li>Stays on your device<span>Provider details (encrypted), favorites, watch history and recent searches. The app opts out of Android cloud backup and device transfer.</span></li>
       </ul>
-      <p>If you choose the optional public streams, the catalog comes from a server run by the HelmTV developer and the streams are served by other hosts. Those servers see your IP address like any website. Read the full <a href="privacy">privacy policy</a>.</p>
+      <p>The app contacts only the provider you configure, and no server run by the HelmTV developer. Read the full <a href="privacy">privacy policy</a>.</p>
     </div>
   </section>
 
   <section class="block" id="faq">
     <div class="wrap wide">
       <h2>Questions</h2>
-    <details><summary>Does HelmTV include channels, movies or series?</summary><p>No. HelmTV is a player. It includes no channels, movies or series of its own for your provider, and it does not sell any. You add the provider you already have the right to use. The optional &ldquo;Use public streams&rdquo; mode is only a sample for trying the app (see below).</p></details>
+    <details><summary>Does HelmTV include channels, movies or series?</summary><p>No. HelmTV is a player. It includes no channels, movies or series of its own, and it does not sell any. You add the provider you already have the right to use.</p></details>
     <details><summary>Which providers work?</summary><p>Providers that offer an Xtream-compatible login: a server address, a username and a password. If your provider gave you those three things, HelmTV can use them.</p></details>
     <details><summary>Do I need an account with you?</summary><p>No. There is no HelmTV account. Your provider details are stored encrypted on your device.</p></details>
     <details><summary>Does it work on Chromecast with Google TV and Fire TV?</summary><p>HelmTV is built for Android TV, including Chromecast with Google TV. Fire TV is not officially supported.</p></details>
     <details><summary>Can I use it on my phone?</summary><p>No. HelmTV is made for Android TV and the TV remote.</p></details>
-    <details><summary>I have no provider yet. Can I still try it?</summary><p>Yes. On first start choose &ldquo;Use public streams&rdquo; to try the app with a small sample of publicly available streams, such as news channels and open films. The list comes from a server run by the HelmTV developer, and the streams are served by the broadcasters&rsquo; and hosts&rsquo; own servers. HelmTV does not own or host them, they can change or go offline, and those servers see your IP address like any website. See the <a href="privacy">privacy policy</a>.</p></details>
+    <details><summary>I have no provider yet. Can I still use it?</summary><p>Not on its own. HelmTV is only a player and includes no channels, movies or series, so it needs an Xtream-compatible service from a provider you choose. HelmTV does not sell or recommend any provider.</p></details>
     <details><summary>How do I get support?</summary><p>Write to <a href="mailto:support@helmtv.app">support@helmtv.app</a>. HelmTV cannot help with your subscription or your provider's service. For those, contact your provider.</p></details>
     </div>
   </section>
@@ -184,6 +198,7 @@
       <li>Coil for loading images</li>
       <li>OkHttp for network requests</li>
       <li>Jetpack DataStore for settings</li>
+      <li>ZXing for the feedback QR code</li>
       <li>The Figtree typeface (SIL Open Font License)</li>
     </ul>
     </div>
@@ -192,8 +207,7 @@
   <section class="block" id="content">
     <div class="wrap wide">
       <h2>Content and copyright</h2>
-      <p>HelmTV is a media player. It includes no TV channels, movies or series of its own, and it does not sell any. Everything you watch with your own provider comes from a provider that you choose and that you are legally allowed to use.</p>
-      <p>The one exception is the optional &ldquo;Use public streams&rdquo; mode, offered on first start and in Settings so you can try the app. It shows a small sample of publicly available streams, such as news channels from international broadcasters and open films. The list comes from a server run by the HelmTV developer; the streams themselves are served by third-party hosts, and HelmTV does not host or own them.</p>
+      <p>HelmTV is a media player. It includes no TV channels, movies or series of its own, and it does not sell any. Everything you watch comes from a provider that you choose and that you are legally allowed to use.</p>
       <p>Because HelmTV does not host or provide anyone else&rsquo;s content, it cannot remove it. If you believe content is being distributed without permission, please contact the provider or host that serves it. Questions about the app itself, and copyright notices, go to <a href="mailto:support@helmtv.app">support@helmtv.app</a>.</p>
     </div>
   </section>
@@ -209,9 +223,9 @@
 <footer class="site">
   <div class="wrap wide">
     <p><a href="privacy">Privacy policy</a> &middot; <a href="mailto:support@helmtv.app">support@helmtv.app</a></p>
-    <p>HelmTV 0.1.0. No cookies, no analytics, no external requests from this website.</p>
-    <p>HelmTV is published by Karlgrund Consulting AB (org. no. 559393-2915), Sweden.</p>
-    <p>Google Play and Android TV are trademarks of Google LLC. HelmTV is not affiliated with or endorsed by Google.</p>
+    <p>No cookies, no analytics, no external requests from this website.</p>
+    <p class="fine">HelmTV is published by Karlgrund Consulting AB (org. no. 559393-2915), Sweden.</p>
+    <p class="fine">Google Play, Android, Android TV, Google TV and Chromecast are trademarks of Google LLC. Fire TV is a trademark of Amazon.com, Inc. or its affiliates. All other product names are the property of their owners. HelmTV is not affiliated with or endorsed by any of them.</p>
   </div>
 </footer>
 </body>
