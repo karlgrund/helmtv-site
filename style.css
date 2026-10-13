@@ -144,10 +144,11 @@ footer.site p { margin: 0 0 0.5rem; }
 @media (min-width: 64rem) { .strip.posters { grid-template-columns: repeat(8, 1fr); } }
 .strip li { margin: 0; }
 .strip img { display: block; width: 100%; border-radius: 8px; border: 1px solid var(--line); aspect-ratio: 2 / 3; object-fit: cover; }
-.strip.logos { grid-template-columns: repeat(4, 1fr); }
-@media (min-width: 40rem) { .strip.logos { grid-template-columns: repeat(8, 1fr); } }
-.strip.logos img { aspect-ratio: 1; border: 0; border-radius: 16%; }
+.strip.logos { grid-template-columns: repeat(3, 1fr); }
+@media (min-width: 40rem) { .strip.logos { grid-template-columns: repeat(6, 1fr); } }
+.strip.logos img { aspect-ratio: 1; border: 0; border-radius: 16%; background: #111316; padding: 8%; }
 .frames { display: grid; gap: 0.8rem; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); list-style: none; padding: 0; margin: 1.2rem 0 0.6rem; }
+@media (min-width: 48rem) { .frames { grid-template-columns: repeat(3, 1fr); } }
 .frames li { margin: 0; }
 .frames img { display: block; width: 100%; border-radius: 8px; border: 1px solid var(--line); aspect-ratio: 16 / 9; object-fit: cover; }
 .note { color: var(--muted); font-size: 0.9rem; }

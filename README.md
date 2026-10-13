@@ -3,7 +3,7 @@
 Static site for https://helmtv.app: home page, privacy policy (`/privacy`, served from `privacy.html`), 404 page.
 Plain HTML and CSS, no build step, no JavaScript, no third-party requests.
 
-Images are WebP in `images/` (artwork from the invented demo catalog in the app repo's `marketing/`); the Figtree font (SIL OFL) is self-hosted in `fonts/`, so the site makes no third-party requests.
+Images are WebP in `images/` (photographic artwork generated for the invented demo catalog, from the app repo's `marketing/photo/`); the Figtree font (SIL OFL) is self-hosted in `fonts/`, so the site makes no third-party requests.
 
 Files: `index.html`, `privacy.html`, `404.html`, `style.css`, `images/`, `fonts/`, `favicon.svg`, `robots.txt`,
 `CNAME` (contains `helmtv.app`), `.nojekyll` (tells GitHub Pages to skip Jekyll).
