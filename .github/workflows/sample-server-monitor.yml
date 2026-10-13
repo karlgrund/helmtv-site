@@ -1,6 +1,6 @@
 # External check of the HelmTV sample server that Google reviewers log in to.
 # Runs on GitHub's runners (not on the Pi or the home network). A failed run emails the repo owner and sends a
-# push through the GitHub mobile app. The sample login is public by design (it is in the Play review notes).
+# push through the GitHub mobile app. The address and login are repository secrets, not written in this public file.
 name: Sample server monitor
 
 on:
@@ -18,12 +18,14 @@ jobs:
     steps:
       - name: Login works and a live stream is served
         env:
-          BASE: https://helmtv-demo.tail892788.ts.net
+          BASE: ${{ secrets.SAMPLE_BASE_URL }}
+          U: ${{ secrets.SAMPLE_USER }}
+          P: ${{ secrets.SAMPLE_PASSWORD }}
         run: |
           set -u
           check() {
-            curl -fsS -m 20 "$BASE/player_api.php?username=demo&password=demo" | grep -Eq '"auth": ?1' || return 1
-            curl -fsS -m 20 "$BASE/player_api.php?username=demo&password=demo&action=get_live_streams" | grep -q '"stream_id"' || return 1
+            curl -fsS -m 20 "$BASE/player_api.php?username=$U&password=$P" | grep -Eq '"auth": ?1' || return 1
+            curl -fsS -m 20 "$BASE/player_api.php?username=$U&password=$P&action=get_live_streams" | grep -q '"stream_id"' || return 1
             curl -fsS -m 20 "$BASE/media/live/harbor-24/index.m3u8" | grep -q '^#EXTM3U' || return 1
           }
           for attempt in 1 2 3; do
