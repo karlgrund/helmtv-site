@@ -77,11 +77,9 @@ li { margin-bottom: 0.35rem; }
   padding: 0.8rem 1.4rem; border-radius: 999px; text-decoration: none; margin: 0.5rem 0 0;
 }
 .button:hover { filter: brightness(1.08); }
-.badge {
-  display: inline-block; border: 1px solid var(--line); background: var(--surface); color: var(--muted);
-  font-weight: 600; padding: 0.55rem 1.1rem; border-radius: 999px; cursor: default;
-  user-select: none;
-}
+.play-badge { display: inline-block; line-height: 0; }
+.play-badge img { height: 60px; width: auto; border-radius: 6px; }
+.play-badge:hover img { opacity: 0.88; }
 .button.ghost { background: transparent; color: var(--text); border: 1px solid var(--line); }
 .button.ghost:hover { border-color: var(--brass); filter: none; }
 table { border-collapse: collapse; width: 100%; margin: 0 0 1rem; font-size: 0.95rem; }
