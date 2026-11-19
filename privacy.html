@@ -214,9 +214,9 @@ details p:last-child { padding-bottom: 0.2rem; }
 <main id="main">
   <div class="wrap">
     <h1>Privacy policy</h1>
-    <p class="meta">Last updated: 2026-10-12 &middot; Applies to the HelmTV app for Android TV (package <code>com.helmtv.app</code>) and to this website, helmtv.app.</p>
+    <p class="meta">Last updated: 2026-11-19 &middot; Applies to the HelmTV app for Android TV (package <code>com.helmtv.app</code>) and to this website, helmtv.app.</p>
 
-    <p class="notice">In short: HelmTV has no account, no analytics, no ads and no tracking. Everything the app stores stays on your device, and the app opts out of Android cloud backup and device transfer. The app only connects to the provider you configure yourself. It contacts no server run by the HelmTV developer.</p>
+    <p class="notice">In short: HelmTV has no account, no analytics, no ads and no tracking. Everything the app stores stays on your device, and the app opts out of Android cloud backup and device transfer. The app connects to the provider you configure yourself, and fetches TMDB&rsquo;s public lists of what is trending this week, which contain nothing about you. It contacts no server run by the HelmTV developer.</p>
 
     <h2>1. Who is responsible</h2>
     <p>The HelmTV app and this website are published by Karlgrund Consulting AB, organisation number 559393-2915, Sweden (&ldquo;we&rdquo;, &ldquo;the HelmTV developer&rdquo;). We are the controller, within the meaning of the EU General Data Protection Regulation (GDPR), for the personal data described in section 4. Contact for all privacy questions and requests: <a href="mailto:support@helmtv.app">support@helmtv.app</a>.</p>
@@ -234,6 +234,7 @@ details p:last-child { padding-bottom: 0.2rem; }
         <tr><td>Provider connection: a display name, server address, username and password</td><td>To log in to your provider. The address, username and password are encrypted with a key held in the Android Keystore before they are saved.</td></tr>
         <tr><td>A cached copy of your provider's catalog: categories, channels, movies, series and program guide data</td><td>So browsing, search and the guide work quickly. It is refreshed from your provider when you open the app.</td></tr>
         <tr><td>Favorites and watch progress (what you watched and how far)</td><td>Favorites and &ldquo;continue watching&rdquo;.</td></tr>
+        <tr><td>TMDB&rsquo;s weekly trending lists: the TMDB ids of this week&rsquo;s trending movies and series, and when they were fetched</td><td>For the &ldquo;Trending this week&rdquo; rows in Movies and Series. Refreshed at most once a day.</td></tr>
         <tr><td>Your recent searches: the last ten things you searched for in the app</td><td>To show them as suggestions in Search. You can clear them at any time with &ldquo;Clear history&rdquo; in Search.</td></tr>
         <tr><td>Preferences: for example the interface language, last watched channel, recently used and hidden categories, grouping, and keyboard layout</td><td>To remember how you like the app set up.</td></tr>
       </tbody>
@@ -259,6 +260,7 @@ details p:last-child { padding-bottom: 0.2rem; }
     <ul>
       <li><strong>Your provider.</strong> The app contacts the server address you entered to log in, download the catalog and program guide, and play streams. Your username and password are sent to your provider as part of these requests, as the Xtream protocol requires. A provider may redirect a stream to another server of its own, such as a content delivery host. Your provider is your choice and is a separate controller with its own privacy policy. We do not receive any of this.</li>
       <li><strong>Images from your provider's catalog.</strong> Posters and channel logos are loaded from the image addresses that your provider's catalog contains. Those addresses can point to servers that are not run by your provider, and such a server can see your IP address and which image was requested. This is determined by your provider, not by us.</li>
+      <li><strong>TMDB&rsquo;s trending lists.</strong> For the &ldquo;Trending this week&rdquo; rows in Movies and Series, the app fetches the public weekly trending lists for movies and for series from The Movie Database (TMDB, <code>api.themoviedb.org</code>) over HTTPS, at most once a day, when you open the app. The request names only the list it asks for and carries the app&rsquo;s own TMDB access key, which is the same in every copy of the app. It contains nothing about you, your provider or what you watch: the lists are matched against your provider&rsquo;s catalog on your device. Like any server, TMDB can see your IP address and the time of the request. TMDB is a separate controller with its own privacy policy. The app loads no other data, text or images from TMDB.</li>
     </ul>
     <p>The app makes no other network requests. What your provider, an image server or another host does with the information it receives is governed by its own privacy policy, not this one.</p>
 
